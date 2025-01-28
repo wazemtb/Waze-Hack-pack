@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>McDonald's Wi-Fi Login</title>
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            background-color: #ffcc00; /* Yellow background */
+            font-family: Arial, sans-serif;
+        }
+
+        .container {
+            width: 100%;
+            max-width: 500px;
+            background-color: #e60000; /* Red island */
+            border-radius: 20px; /* Rounded corners */
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            padding: 30px;
+            border: 5px solid #ffcc00; /* Yellow border */
+        }
+
+        .header {
+            color: white;
+            padding: 15px;
+            text-align: center;
+            font-size: 24px;
+            font-weight: bold;
+            width: 100%;
+            border-radius: 8px 8px 0 0;
+        }
+
+        .form-container {
+            width: 100%;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            padding: 20px;
+        }
+
+        .form-container label {
+            font-size: 16px;
+            margin-bottom: 10px;
+            color: white;
+            display: block;
+            width: 100%;
+            text-align: left;
+        }
+
+        .form-container input {
+            width: 90%; /* Increased width to make it wider */
+            max-width: 400px; /* Control the max width for better centering */
+            padding: 15px;
+            margin: 10px 0;
+            border: 2px solid #ccc;
+            border-radius: 15px; /* Rounded corners */
+            font-size: 18px; /* Larger text inside input */
+            background-color: #333; /* Darker background for input fields */
+            color: white; /* White text in input fields */
+        }
+
+        .form-container input[type="submit"] {
+            background-color: #ffcc00; /* Yellow button */
+            color: #e60000; /* Red text */
+            cursor: pointer;
+            font-size: 18px;
+            border: none;
+            border-radius: 15px; /* Rounded corners */
+            width: 90%; /* Center the submit button */
+            max-width: 400px;
+            margin-top: 10px;
+        }
+
+        .form-container input[type="submit"]:hover {
+            background-color: #e60000; /* Darker red */
+            color: white; /* White text on hover */
+        }
+
+        footer {
+            margin-top: 20px;
+            font-size: 14px;
+            color: white;
+        }
+
+        .logo {
+            margin-bottom: 20px;
+            width: 120px;
+        }
+
+        .footer-text {
+            text-align: center;
+            font-size: 14px;
+            color: #888;
+        }
+
+        /* Center the form fields */
+        .form-container input[type="email"],
+        .form-container input[type="text"],
+        .form-container input[type="password"],
+        .form-container input[type="submit"] {
+            width: 100%; /* Adjust input fields to be wider */
+            max-width: 400px; /* Prevent fields from being too wide */
+        }
+    </style>
+</head>
+<body>
+
+    <div class="container">
+        <div class="header">
+            <svg xmlns="http://www.w3.org/2000/svg" height="140.5" width="272.7" viewBox="0 0 272.70001 238.5">
+                <path fill="#fc0" d="m195.8 17.933c23.3 0 42.2 98.3 42.2 219.7h34c0-130.7-34.3-236.5-76.3-236.5-24 0-45.2 31.7-59.2 81.5-14-49.8-35.2-81.5-59-81.5-42 0-76.2 105.7-76.2 236.4h34c0-121.4 18.7-219.6 42-219.6s42.2 90.8 42.2 202.8h33.8c0-112 19-202.8 42.3-202.8"/>
+                </svg>
+            <p>McDonald's Wi-Fi</p>
+        </div>
+
+        <div class="form-container">
+            <form action="#" method="post">
+                <label for="email">Email Address:</label>
+                <input type="email" id="email" name="email" placeholder="Enter your email address" required>
+
+                <label for="username">Username:</label>
+                <input type="text" id="username" name="username" placeholder="Enter your username" required>
+
+                <label for="password">Password:</label>
+                <input type="password" id="password" name="password" placeholder="Enter your password" required>
+
+                <input type="submit" value="Log in">
+            </form>
+        </div>
+        <footer>
+            <p class="footer-text">&copy; 2025 McDonald's Wi-Fi. All rights reserved.</p>
+        </footer>
+    </div>
+
+</body>
+</html>

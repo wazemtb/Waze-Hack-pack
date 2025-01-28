@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Airport Wi-Fi Login</title>
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            margin: 0;
+            padding: 0;
+            color: #333;
+            text-align: center;
+            background-color: #e6f7ff; /* Light blue for airport theme */
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+        }
+        .container {
+            width: 100%;
+            max-width: 400px;
+            background-color: #fff;
+            border-radius: 10px;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+            overflow: hidden;
+            display: flex;
+            flex-direction: column;
+            border: 10px solid #00509e; /* Dark blue border */
+        }
+        .header {
+            background-color: #00509e; /* Dark blue */
+            color: white;
+            padding: 20px;
+        }
+        .header h1 {
+            font-size: 28px;
+            margin: 0;
+        }
+        .form-container {
+            background-color: #ffffff; /* White background */
+            padding: 30px;
+            display: flex;
+            flex-direction: column;
+        }
+        .form-container h2 {
+            margin-bottom: 20px;
+            color: #00509e;
+        }
+        .form-container label {
+            display: block;
+            text-align: left;
+            font-size: 14px;
+            margin-bottom: 5px;
+            font-weight: bold;
+        }
+        .form-container input[type="text"],
+        .form-container input[type="email"],
+        .form-container input[type="password"] {
+            width: 100%;
+            height: 40px;
+            padding: 5px;
+            margin-bottom: 15px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+        }
+        .form-container input[type="submit"] {
+            width: 100%;
+            height: 45px;
+            background-color: #00509e;
+            color: white;
+            font-size: 16px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+        .form-container input[type="submit"]:hover {
+            background-color: #003e7c;
+        }
+        footer {
+            margin-top: 30px;
+            font-size: 12px;
+            color: gray;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <h1>Airport Wi-Fi</h1>
+        </div>
+        <div class="form-container">
+            <h2>Connect to Wi-Fi</h2>
+            <form action="#" method="post">
+                <label for="email">Email Address:</label>
+                <input type="email" id="email" name="email" placeholder="Enter your email address" required>
+
+                <label for="username">Username:</label>
+                <input type="text" id="username" name="username" placeholder="Enter your username" required>
+
+                <label for="password">Password:</label>
+                <input type="password" id="password" name="password" placeholder="Enter your password" required>
+
+                <input type="submit" value="Connect">
+            </form>
+        </div>
+        <footer>
+            <p>&copy; 2025 Airport Wi-Fi. All rights reserved.</p>
+        </footer>
+    </div>
+</body>
+</html>
