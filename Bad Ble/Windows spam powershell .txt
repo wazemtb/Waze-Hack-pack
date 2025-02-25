@@ -1,0 +1,11 @@
+REM Author: Waze
+REM Description: Displays a message box with a "Sorry, but you have been hacked!" message and hides the PowerShell window.
+REM Version: 1.0
+
+DELAY 800
+GUI r
+DELAY 800
+STRING powershell -WindowStyle Hidden -Command "for ($i=1; $i -le 100; $i++) { Add-Type -AssemblyName 'System.Windows.Forms'; [System.Windows.Forms.MessageBox]::Show('Sorry, but you have been hacked! 👿') }"
+ENTER
+DELAY 600
+GUI D

